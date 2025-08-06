@@ -6,7 +6,7 @@ function togg(e){
     }else{
          var t=document.querySelector('.data');
         t.style.display="none";
-        e.innerText='Open';
+        e.innerText='Data';
     }
     
 }
@@ -39,4 +39,5 @@ function downloadDivAsImage() {
       link.download = "div-image.png";
       link.click();
     });
+
   }
