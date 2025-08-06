@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="toggle" onclick="togg(this)">Open</div>
+    <div class="data">
+        <div>
+            <span>Name:</span>
+            <input onkeyup="set()" value="Rajesh Bhandari" type="text" placeholder="Name" name="" id="name">
+        </div>
+        <div>
+            <span>Address:</span>
+            <input onkeyup="set()" value="Pokhara,1-Simpani" type="text" placeholder="Address" name="" id="address">
+        </div>
+        <div>
+            <span>DOB:</span>
+            <input onkeyup="set()" value="2060-02-11" type="text" placeholder="DOB" name="" id="dob">
+
+        </div>
+        <div>
+            <span>F/H Name:</span>
+            <input onkeyup="set()" type="text" placeholder="F/H Name" name="" id="fhname">
+
+        </div>
+        <div>
+            <span>Passport Num:</span>
+            <input onkeyup="set()" value="46-31-23-98262" type="text" placeholder="Passport Number" name="" id="pn">
+
+        </div>
+
+        <div>
+            <span>Citizenship Num:</span>
+            <input onkeyup="set()" value="46-31-23-98262" type="text" placeholder="Citizenship Number" name="" id="cn">
+
+        </div>
+
+        <div>
+            <span>Phone:</span>
+            <input onkeyup="set()" value="985423413" type="text" placeholder="Phone" name="" id="phone">
+
+        </div>
+
+        <div>
+            <span>Blood Group:</span>
+            <input onkeyup="set()" value="A+" type="text" placeholder="Blood Group" name="" id="bg">
+
+        </div>
+        <div>
+            <span>D.O.I:</span>
+            <input onkeyup="set()" value="02-39-2025" type="text" placeholder="D.O.I" title="Date of Issue" name=""
+                id="doi">
+
+        </div>
+
+        <div>
+            <span>D.O.E:</span>
+            <input onkeyup="set()" value="02-39-2030" type="text" placeholder="D.O.E" title="Date of Expiry" name=""
+                id="doe">
+
+        </div>
+
+        <div>
+            <span>Category:</span>
+            <input onkeyup="set()" value="A" type="text" placeholder="Category:" name="" id="cat">
+
+        </div>
+
+        <div>
+            <span>D.L Num:</span>
+            <input onkeyup="set()" value="01-07-01330933" type="text" placeholder="D.L Number" name="" id="dl">
+
+        </div>
+        <div>
+            <span>Image:</span>
+            <input onkeyup="set()" type="text" placeholder="Image Source Online" name="" id="imgonline">
+
+        </div>
+
+
+
+    </div>
+<button id="down"  onclick="downloadDivAsImage()">Download as Image</button>
+
+    <div id="capture" class="main">
+        <div class="head">
+            <div class="logo">
+                <!-- <img src="/coatofarms.png" alt=""> -->
+            </div>
+            <div class="detail">
+                <div>
+                    <!-- <h5 style="color: red;">नेपाल सरकार</h5>
+                    <h4 style="color: red;">GOVERNMENT OF NEPAL</h4>
+                    <h4>सवारी चालक अनुमतिपत्र</h4>
+                    <h3>DRIVING LISCENCE</h3> -->
+                </div>
+            </div>
+            <div class="nepal_logo">
+                <!-- <img src="/nepallogo.png" alt=""> -->
+            </div>
+        </div>
+        <div class="middle">
+            <div class="left">
+                <h6 id="dl_" style="text-align: left;"></h6>
+                <h6 id="bg_" style="text-align: left;"></h6>
+                <!-- <img style="width: 100px;" src="/qr.png" alt=""> -->
+                <h6 id="doi_" style="text-align: left;"></h6>
+                <h6 id="doe_" style="text-align: left;"></h6>
+            </div>
+            <div class="mid">
+                <h6 id="name_" style="text-align: left; margin-top: 18px;"></h6>
+                <h6 id="address_" style="text-align: left;"></h6>
+
+                <h6 id="dob_" style="text-align: left;"></h6>
+                <h6 id="fhname_" style="text-align: left;"></h6>
+                <h6 id="cn_" style="text-align: left;"></h6>
+                <h6 id="pn_" style="text-align: left;"></h6>
+                <h6 id="phone_" style="text-align: left;"></h6>
+
+
+
+
+
+            </div>
+            <div class="right">
+                <img width="90px" height="90px"
+                    style="object-fit: cover;object-position: center top; position: relative;bottom: 10px;left: 2px;filter: grayscale(80%);"
+                    src="" alt="" id="pp">
+                <h5 id="cat_">Category:A</h5>
+            </div>
+        </div>
+        <!-- <div class="end">
+            
+            <div>
+                <input type="text">
+                <h6>Issued By</h6>
+            
+            </div>
+
+            <div><input type="text">
+            <h6>Issued By</h6>
+            </div>
+
+
+        </div> -->
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="logic.js"></script>
+
+</html>

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  width: 31.25rem; /* 500px */
+  height: 18.75rem; /* 300px */
+  /* border: 0.0625rem solid rgb(23, 23, 23); */
+  border-radius: 1.25rem; /* 20px */
+  /* padding: 0.3125rem;  */
+  background-image: url(/toedit.png);
+  background-size: 100% 100%;
+}
+
+.head {
+  height: 4.375rem; /* 70px */
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing:.3px;
+  margin: 2px;
+}
+
+.nepal_logo img {
+  width: 3.125rem;  /* 50px */
+  height: 3.75rem;  /* 60px */
+  object-fit: contain;
+}
+
+.logo img {
+  width: 3.75rem;  /* 60px */
+  height: 4.375rem;  /* 70px */
+  object-fit: contain;
+}
+
+.logo {
+  margin-left: 1.5625rem; /* 25px */
+}
+
+.nepal_logo {
+  margin-right: 1.5625rem; /* 25px */
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.left {
+  padding-left: 0.625rem; /* 10px */
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  padding: 0.625rem; /* 10px */
+  padding-right: 1.875rem; /* 30px */
+}
+
+.end {
+  height: 3.75rem; /* 60px */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+
+.data {
+  margin: 0.625rem; /* 10px */
+  display: flex;
+  width: 50rem; /* 800px */
+  background:linear-gradient(rgb(243, 242, 242));
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  border-radius: 20px;
+
+}
+
+.data div {
+  margin: 0.1875rem; /* 3px */
+  outline: none;
+  border-radius: 3px;
+ 
+  padding: 10px;
+  
+
+}
+
+#down:hover,.toggle:hover{
+cursor: pointer;
+transform: translateY(-2px);
+border-bottom: 1px solid black;
+}
+#down,.toggle{
+padding: 8px;
+margin: 10px;
+background-color: antiquewhite;
+border-radius: 10px;
+border: 0px;
+transition: .2s all;
+position: absolute;
+top: 0;
+right: 0;
+font-weight: 500;
+font-size: 1rem;
+}
+.toggle{
+left: 0;
+max-width: 40px;
+text-align: center;
+}
+
+input{
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border-top:0px ;
+  border-left:0px ;
+  border-right:0px ;
+  border-bottom:1px solid black ;
+}
+@media screen and (max-width: 600px) {
+  *{
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+.data{
+  max-width: 90vw;
+  max-height: 30vh;
+  overflow-y: scroll;
+  display: block;
+}
+}
