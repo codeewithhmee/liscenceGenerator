@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(204, 231, 255);
 }
 
 .main {
@@ -160,5 +161,4 @@ input{
   display: block;
 }
 }
-
 
