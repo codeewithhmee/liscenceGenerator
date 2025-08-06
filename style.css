@@ -19,7 +19,7 @@ body {
   /* border: 0.0625rem solid rgb(23, 23, 23); */
   border-radius: 1.25rem; /* 20px */
   /* padding: 0.3125rem;  */
-  background-image: url(/toedit.png);
+  background-image: url(toedit.png);
   background-size: 100% 100%;
 }
 
@@ -159,3 +159,4 @@ input{
   display: block;
 }
 }
+
