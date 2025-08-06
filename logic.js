@@ -39,6 +39,4 @@ function downloadDivAsImage() {
       link.download = "div-image.png";
       link.click();
     });
-
   }
-
