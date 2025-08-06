@@ -1,5 +1,5 @@
 function togg(e){
-    if(e.innerText=='Open'){
+    if(e.innerText=='Data'){
         var t=document.querySelector('.data');
         t.style.display="flex";
         e.innerText='Close';
@@ -41,3 +41,4 @@ function downloadDivAsImage() {
     });
 
   }
+
